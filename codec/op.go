@@ -571,19 +571,19 @@ func DecodeOp(data []byte) (*Op, error) {
 			} else {
 				op = new(TenderbakeEndorsement)
 			}
-		case tezos.OpTypePreendorsement:
+		case tezos.OpTypePreattestation:
 			op = new(TenderbakePreendorsement)
 		case tezos.OpTypeEndorsementWithSlot:
 			op = new(EndorsementWithSlot)
 		case tezos.OpTypeSeedNonceRevelation:
 			op = new(SeedNonceRevelation)
-		case tezos.OpTypeDoubleEndorsementEvidence:
+		case tezos.OpTypeDoubleAttestationEvidence:
 			if o.Params.OperationTagsVersion < 2 {
 				op = new(DoubleEndorsementEvidence)
 			} else {
 				op = new(TenderbakeDoubleEndorsementEvidence)
 			}
-		case tezos.OpTypeDoublePreendorsementEvidence:
+		case tezos.OpTypeDoublePreattestationEvidence:
 			op = new(TenderbakeDoublePreendorsementEvidence)
 		case tezos.OpTypeDoubleBakingEvidence:
 			op = new(DoubleBakingEvidence)

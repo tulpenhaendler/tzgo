@@ -114,10 +114,10 @@ const (
 	OpTypeSmartRollupRecoverBond                 // 39 v016
 	OpTypeDalPublishCommitment                   // 40 v019
 	OpTypeAttestation                            // 41 v019 ??
-	OpTypeAttestationWithDal                     // 45 v019 ??
 	OpTypePreattestation                         // 42 v019
 	OpTypeDoublePreattestationEvidence           // 43 v019
 	OpTypeDoubleAttestationEvidence              // 44 v019
+	OpTypeAttestationWithDal                     // 45 v019 ??
 )
 
 var (
