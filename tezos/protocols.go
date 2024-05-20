@@ -49,7 +49,7 @@ var (
 	Ghostnet   = MustParseChainIdHash("NetXnHfVqm9iesp")
 	Nairobinet = MustParseChainIdHash("NetXyuzvDo2Ugzb")
 	Oxfordnet  = MustParseChainIdHash("NetXxWsskGahzQB")
-	Parisnet   = MustParseChainIdHash("NetXdQprcVkpaWU") // TODO
+	Parisnet   = MustParseChainIdHash("NetXo8SqH1c38SS")
 
 	Versions = map[ProtocolHash]int{
 		ProtoGenesis:   0,
@@ -98,7 +98,7 @@ var (
 			{PtMumbai, 0, 3268609, 3760128, 593, 5, 16384, 1024},  // v16
 			{PtNairobi, 0, 3760129, 5070848, 623, 5, 16384, 1024}, // v17
 			{Proxford, 0, 5070849, -1, 703, 5, 16384, 1024},       // v18
-			// {PtParisB, 0, ??, -1, ??, 5, 24576, 24576},       // v19
+			// {PtParisB, 0, ??, -1, ??, 2, 24576, 24576},       // v19
 		},
 		Ghostnet: {
 			{ProtoGenesis, 0, 0, 0, 0, 3, 4096, 256},            // 0
@@ -126,10 +126,10 @@ var (
 			{Proxford, 0, 16385, -1, 2, 3, 8192, 512},  // v18
 		},
 		Parisnet: {
-			{ProtoGenesis, 0, 0, 0, 0, 3, 8192, 512},   // 0
-			{ProtoBootstrap, 0, 1, 1, 0, 3, 8192, 512}, // 0
-			{Proxford, 2, 2, 16384, 0, 3, 8192, 512},   // v18
-			{PtParisB, 0, 16385, -1, 2, 3, 8192, 8192}, // v19
+			{ProtoGenesis, 0, 0, 0, 0, 3, 8192, 512},    // 0
+			{ProtoBootstrap, 0, 1, 1, 0, 3, 8192, 512},  // 0
+			{Proxford, 2, 2, 16384, 0, 3, 8192, 512},    // v18
+			{PtParisB, 0, 16385, -1, 2, 2, 12288, 8192}, // v19
 		},
 	}
 )

@@ -13,14 +13,14 @@ var (
 	// either overwrite this default or set custom params per operation using
 	// op.WithParams().
 	DefaultParams = (&Params{
-		MinimalBlockDelay:            15 * time.Second, // 10
+		MinimalBlockDelay:            10 * time.Second,
 		CostPerByte:                  250,
 		OriginationSize:              257,
 		HardGasLimitPerOperation:     1040000,
-		HardGasLimitPerBlock:         2600000, // 1733333
+		HardGasLimitPerBlock:         1733333,
 		HardStorageLimitPerOperation: 60000,
 		MaxOperationDataLength:       32768,
-		MaxOperationsTTL:             240, // 360
+		MaxOperationsTTL:             360,
 	}).
 		WithChainId(Mainnet).
 		WithDeployment(Deployments[Mainnet].AtProtocol(ProtoV016_2))
@@ -38,7 +38,7 @@ var (
 		MaxOperationsTTL:             240,
 	}).
 		WithChainId(Ghostnet).
-		WithDeployment(Deployments[Ghostnet].AtProtocol(ProtoV016_2))
+		WithDeployment(Deployments[Ghostnet].AtProtocol(ProtoV019))
 
 	// NairobinetParams defines the blockchain configuration for Nairobi testnet.
 	// To produce compliant transactions, use these defaults in op.WithParams().
@@ -70,17 +70,17 @@ var (
 		WithChainId(Oxfordnet).
 		WithDeployment(Deployments[Oxfordnet].AtProtocol(ProtoV018))
 
-	// ParisnetParams defines the blockchain configuration for Oxford testnet.
+	// ParisnetParams defines the blockchain configuration for Paris testnet.
 	// To produce compliant transactions, use these defaults in op.WithParams().
 	ParisnetParams = (&Params{
 		MinimalBlockDelay:            5 * time.Second,
 		CostPerByte:                  250,
 		OriginationSize:              257,
 		HardGasLimitPerOperation:     1040000,
-		HardGasLimitPerBlock:         2600000, // ??
+		HardGasLimitPerBlock:         1733333,
 		HardStorageLimitPerOperation: 60000,
 		MaxOperationDataLength:       32768,
-		MaxOperationsTTL:             240, // ??
+		MaxOperationsTTL:             360,
 	}).
 		WithChainId(Parisnet).
 		WithDeployment(Deployments[Parisnet].AtProtocol(ProtoV019))

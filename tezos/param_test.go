@@ -265,6 +265,8 @@ var paramResults = map[int64]paramResult{
 	3268609: {593, -1, 8 + 2},      // v016 start
 	3760128: {622, 15, 16 + 4 + 1}, // --> end
 	3760129: {623, -1, 8 + 2},      // v017 start
+	5070848: {702, 15, 16 + 4 + 1}, // --> end
+	5070849: {703, -1, 8 + 2},      // v018 start
 }
 
 var paramBlocks = []BlockMetadata{
@@ -765,6 +767,34 @@ var paramBlocks = []BlockMetadata{
 		LevelInfo: &LevelInfo{
 			Level:              3760129,
 			Cycle:              623,
+			CyclePosition:      0,
+			ExpectedCommitment: false,
+		},
+		VotingPeriodInfo: &VotingPeriodInfo{
+			Position:  0,
+			Remaining: 81912,
+		},
+	}, {
+		// v17 end
+		Protocol:     PtNairobi,
+		NextProtocol: Proxford,
+		LevelInfo: &LevelInfo{
+			Level:              5070848,
+			Cycle:              702,
+			CyclePosition:      8191,
+			ExpectedCommitment: true,
+		},
+		VotingPeriodInfo: &VotingPeriodInfo{
+			Position:  81912,
+			Remaining: 0,
+		},
+	}, {
+		// v18 start
+		Protocol:     Proxford,
+		NextProtocol: Proxford,
+		LevelInfo: &LevelInfo{
+			Level:              5070849,
+			Cycle:              703,
 			CyclePosition:      0,
 			ExpectedCommitment: false,
 		},
