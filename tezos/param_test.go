@@ -36,6 +36,7 @@ var (
 	PtMumbai       = tezos.PtMumbai
 	PtNairobi      = tezos.PtNairobi
 	Proxford       = tezos.Proxford
+	PtParisB       = tezos.PtParisB
 
 	Mainnet     = tezos.Mainnet
 	NewParams   = tezos.NewParams
@@ -267,6 +268,8 @@ var paramResults = map[int64]paramResult{
 	3760129: {623, -1, 8 + 2},      // v017 start
 	5070848: {702, 15, 16 + 4 + 1}, // --> end
 	5070849: {703, -1, 8 + 2},      // v018 start
+	5726208: {742, 15, 16 + 4 + 1}, // --> end
+	5726209: {743, 15, 8 + 2},      // v019 start
 }
 
 var paramBlocks = []BlockMetadata{
@@ -795,6 +798,34 @@ var paramBlocks = []BlockMetadata{
 		LevelInfo: &LevelInfo{
 			Level:              5070849,
 			Cycle:              703,
+			CyclePosition:      0,
+			ExpectedCommitment: false,
+		},
+		VotingPeriodInfo: &VotingPeriodInfo{
+			Position:  0,
+			Remaining: 81912,
+		},
+	}, {
+		// v18 end
+		Protocol:     Proxford,
+		NextProtocol: PtParisB,
+		LevelInfo: &LevelInfo{
+			Level:              5726208,
+			Cycle:              742,
+			CyclePosition:      8191,
+			ExpectedCommitment: true,
+		},
+		VotingPeriodInfo: &VotingPeriodInfo{
+			Position:  81912,
+			Remaining: 0,
+		},
+	}, {
+		// v19 start
+		Protocol:     PtParisB,
+		NextProtocol: PtParisB,
+		LevelInfo: &LevelInfo{
+			Level:              5726209,
+			Cycle:              743,
 			CyclePosition:      0,
 			ExpectedCommitment: false,
 		},
