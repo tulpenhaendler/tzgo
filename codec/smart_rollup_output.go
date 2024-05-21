@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"strconv"
 
-	"blockwatch.cc/tzgo/tezos"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 // SmartRollupExecuteOutboxMessage represents "smart_rollup_execute_outbox_message" operation

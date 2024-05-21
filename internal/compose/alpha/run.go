@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"blockwatch.cc/tzgo/internal/compose"
+	"github.com/trilitech/tzgo/internal/compose"
 )
 
 // 1 load yaml file

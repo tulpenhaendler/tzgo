@@ -4,7 +4,7 @@
 package micheline
 
 import (
-	"blockwatch.cc/tzgo/tezos"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 // Wraps ticket value type into type structure that is compatible

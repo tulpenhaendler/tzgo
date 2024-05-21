@@ -4,7 +4,7 @@
 package alpha
 
 import (
-	"blockwatch.cc/tzgo/internal/compose"
+	"github.com/trilitech/tzgo/internal/compose"
 )
 
 var (

@@ -9,7 +9,7 @@ import (
 	"errors"
 	"fmt"
 
-	"blockwatch.cc/tzgo/base58"
+	"github.com/trilitech/tzgo/base58"
 )
 
 var (

@@ -1,9 +1,10 @@
 package bind
 
 import (
-	"blockwatch.cc/tzgo/micheline"
 	"fmt"
+
 	"github.com/pkg/errors"
+	"github.com/trilitech/tzgo/micheline"
 )
 
 // Option is a type that can either contain a value T, or be None.

@@ -1,12 +1,13 @@
 package bind
 
 import (
-	"blockwatch.cc/tzgo/micheline"
-	"blockwatch.cc/tzgo/tezos"
-	"github.com/pkg/errors"
 	"math/big"
 	"reflect"
 	"time"
+
+	"github.com/pkg/errors"
+	"github.com/trilitech/tzgo/micheline"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 // UnmarshalPrimPath unmarshals a nested prim contained in root, obtained using the given path,

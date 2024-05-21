@@ -1,6 +1,6 @@
 package parse
 
-import "blockwatch.cc/tzgo/contract/ast"
+import "github.com/trilitech/tzgo/contract/ast"
 
 type FixupConfig map[string]FixupStruct
 
