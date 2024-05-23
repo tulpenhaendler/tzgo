@@ -1,6 +1,6 @@
 package bind
 
-import "blockwatch.cc/tzgo/micheline"
+import "github.com/trilitech/tzgo/micheline"
 
 // Lambda is raw Michelson code represented as a Prim tree.
 type Lambda struct {

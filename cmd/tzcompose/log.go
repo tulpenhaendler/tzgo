@@ -4,8 +4,8 @@
 package main
 
 import (
-	"blockwatch.cc/tzgo/rpc"
 	logpkg "github.com/echa/log"
+	"github.com/trilitech/tzgo/rpc"
 )
 
 var (

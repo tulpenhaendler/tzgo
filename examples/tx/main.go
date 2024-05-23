@@ -19,12 +19,12 @@ import (
 	"strconv"
 	"strings"
 
-	"blockwatch.cc/tzgo/codec"
-	"blockwatch.cc/tzgo/rpc"
-	"blockwatch.cc/tzgo/signer"
-	"blockwatch.cc/tzgo/signer/remote"
-	"blockwatch.cc/tzgo/tezos"
 	"github.com/echa/log"
+	"github.com/trilitech/tzgo/codec"
+	"github.com/trilitech/tzgo/rpc"
+	"github.com/trilitech/tzgo/signer"
+	"github.com/trilitech/tzgo/signer/remote"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 var (
@@ -270,10 +270,8 @@ func makeOp(c *rpc.Client, t, data string) (codec.Operation, error) {
 		o = new(codec.SmartRollupExecuteOutboxMessage)
 	case tezos.OpTypeSmartRollupRecoverBond:
 		o = new(codec.SmartRollupRecoverBond)
-	case tezos.OpTypeDalAttestation:
-		o = new(codec.DalAttestation)
-	case tezos.OpTypeDalPublishSlotHeader:
-		o = new(codec.DalPublishSlotHeader)
+	case tezos.OpTypeDalPublishCommitment:
+		o = new(codec.DalPublishCommitment)
 	default:
 		return nil, fmt.Errorf("Unsupported op type %q", t)
 	}

@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"strconv"
 
-	"blockwatch.cc/tzgo/tezos"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 // DrainDelegate represents "drain_delegate" operation

@@ -15,7 +15,7 @@ import (
 	"log"
 	"os"
 
-	"blockwatch.cc/tzgo/tezos"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 var (

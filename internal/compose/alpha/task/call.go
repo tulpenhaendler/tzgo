@@ -4,12 +4,12 @@
 package task
 
 import (
-	"blockwatch.cc/tzgo/codec"
-	"blockwatch.cc/tzgo/internal/compose"
-	"blockwatch.cc/tzgo/internal/compose/alpha"
-	"blockwatch.cc/tzgo/micheline"
-	"blockwatch.cc/tzgo/rpc"
-	"blockwatch.cc/tzgo/signer"
+	"github.com/trilitech/tzgo/codec"
+	"github.com/trilitech/tzgo/internal/compose"
+	"github.com/trilitech/tzgo/internal/compose/alpha"
+	"github.com/trilitech/tzgo/micheline"
+	"github.com/trilitech/tzgo/rpc"
+	"github.com/trilitech/tzgo/signer"
 
 	"github.com/pkg/errors"
 )

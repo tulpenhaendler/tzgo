@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"time"
 
-	"blockwatch.cc/tzgo/micheline"
-	"blockwatch.cc/tzgo/tezos"
 	"github.com/pkg/errors"
+	"github.com/trilitech/tzgo/micheline"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 type PrimMarshaler interface {

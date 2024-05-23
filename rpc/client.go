@@ -15,9 +15,9 @@ import (
 	"os"
 	"strings"
 
-	"blockwatch.cc/tzgo/signer"
-	"blockwatch.cc/tzgo/tezos"
 	"github.com/echa/log"
+	"github.com/trilitech/tzgo/signer"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 const (

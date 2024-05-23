@@ -14,10 +14,10 @@ import (
 	"net/url"
 	"os"
 
-	"blockwatch.cc/tzgo/internal/generate"
-	"blockwatch.cc/tzgo/internal/parse"
 	"github.com/iancoleman/strcase"
 	"github.com/pkg/errors"
+	"github.com/trilitech/tzgo/internal/generate"
+	"github.com/trilitech/tzgo/internal/parse"
 	"gopkg.in/yaml.v3"
 )
 

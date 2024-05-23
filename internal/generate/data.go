@@ -7,8 +7,8 @@ import (
 	"log"
 	"text/template"
 
-	"blockwatch.cc/tzgo/contract/ast"
 	"github.com/pkg/errors"
+	"github.com/trilitech/tzgo/contract/ast"
 )
 
 //go:embed contract.go.tmpl

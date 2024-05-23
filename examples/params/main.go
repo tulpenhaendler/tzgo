@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"os"
 
-	"blockwatch.cc/tzgo/rpc"
-	"blockwatch.cc/tzgo/tezos"
+	"github.com/trilitech/tzgo/rpc"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 var (
@@ -105,7 +105,7 @@ func run() error {
 	fmt.Println("max_operations_ttl .................. ", p.MaxOperationsTTL)
 	fmt.Println("cost_per_byte ....................... ", p.CostPerByte)
 	fmt.Println("origination_size .................... ", p.OriginationSize)
-	fmt.Println("preserved_cycles .................... ", p.PreservedCycles)
+	fmt.Println("preserved_cycles .................... ", p.ConsensusRightsDelay)
 	fmt.Println("--------------------------------------------- ")
 	fmt.Println("hard_gas_limit_per_operation ........ ", p.HardGasLimitPerOperation)
 	fmt.Println("hard_gas_limit_per_block ............ ", p.HardGasLimitPerBlock)

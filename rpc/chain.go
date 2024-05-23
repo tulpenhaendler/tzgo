@@ -4,8 +4,9 @@
 package rpc
 
 import (
-	"blockwatch.cc/tzgo/tezos"
 	"context"
+
+	"github.com/trilitech/tzgo/tezos"
 )
 
 // GetChainId returns the chain id (i.e. network id).

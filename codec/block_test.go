@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"testing"
 
-	"blockwatch.cc/tzgo/tezos"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 func TestBlock(t *testing.T) {

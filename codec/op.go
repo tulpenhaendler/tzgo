@@ -11,8 +11,8 @@ import (
 	"io"
 	"strconv"
 
-	"blockwatch.cc/tzgo/micheline"
-	"blockwatch.cc/tzgo/tezos"
+	"github.com/trilitech/tzgo/micheline"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 const (
@@ -571,19 +571,19 @@ func DecodeOp(data []byte) (*Op, error) {
 			} else {
 				op = new(TenderbakeEndorsement)
 			}
-		case tezos.OpTypePreendorsement:
+		case tezos.OpTypePreattestation:
 			op = new(TenderbakePreendorsement)
 		case tezos.OpTypeEndorsementWithSlot:
 			op = new(EndorsementWithSlot)
 		case tezos.OpTypeSeedNonceRevelation:
 			op = new(SeedNonceRevelation)
-		case tezos.OpTypeDoubleEndorsementEvidence:
+		case tezos.OpTypeDoubleAttestationEvidence:
 			if o.Params.OperationTagsVersion < 2 {
 				op = new(DoubleEndorsementEvidence)
 			} else {
 				op = new(TenderbakeDoubleEndorsementEvidence)
 			}
-		case tezos.OpTypeDoublePreendorsementEvidence:
+		case tezos.OpTypeDoublePreattestationEvidence:
 			op = new(TenderbakeDoublePreendorsementEvidence)
 		case tezos.OpTypeDoubleBakingEvidence:
 			op = new(DoubleBakingEvidence)
@@ -634,10 +634,8 @@ func DecodeOp(data []byte) (*Op, error) {
 			op = new(SmartRollupExecuteOutboxMessage)
 		case tezos.OpTypeSmartRollupRecoverBond:
 			op = new(SmartRollupRecoverBond)
-		case tezos.OpTypeDalAttestation:
-			op = new(DalAttestation)
-		case tezos.OpTypeDalPublishSlotHeader:
-			op = new(DalPublishSlotHeader)
+		case tezos.OpTypeDalPublishCommitment:
+			op = new(DalPublishCommitment)
 
 		default:
 			// stop if rest looks like a signature

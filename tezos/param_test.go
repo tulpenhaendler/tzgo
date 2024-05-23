@@ -3,8 +3,8 @@ package tezos_test
 import (
 	"testing"
 
-	"blockwatch.cc/tzgo/rpc"
-	"blockwatch.cc/tzgo/tezos"
+	"github.com/trilitech/tzgo/rpc"
+	"github.com/trilitech/tzgo/tezos"
 )
 
 type (
@@ -36,6 +36,7 @@ var (
 	PtMumbai       = tezos.PtMumbai
 	PtNairobi      = tezos.PtNairobi
 	Proxford       = tezos.Proxford
+	PtParisB       = tezos.PtParisB
 
 	Mainnet     = tezos.Mainnet
 	NewParams   = tezos.NewParams
@@ -115,7 +116,7 @@ func TestDefaultParams(t *testing.T) {
 		if p.BlocksPerCycle == 0 {
 			t.Errorf("%s params: zero BlocksPerCycle", n)
 		}
-		if p.PreservedCycles == 0 {
+		if p.ConsensusRightsDelay == 0 {
 			t.Errorf("%s params: zero PreservedCycles", n)
 		}
 		if p.BlocksPerSnapshot == 0 {
@@ -139,7 +140,7 @@ func TestDefaultParams(t *testing.T) {
 		if p.MaxOperationDataLength == 0 {
 			t.Errorf("%s params: zero MaxOperationDataLength", n)
 		}
-		if p.OperationTagsVersion < 0 || p.OperationTagsVersion > 2 {
+		if p.OperationTagsVersion < 0 || p.OperationTagsVersion > 3 {
 			t.Errorf("%s params: unknown OperationTagsVersion %d", n, p.OperationTagsVersion)
 		}
 		if p.StartHeight == 0 {
@@ -265,6 +266,10 @@ var paramResults = map[int64]paramResult{
 	3268609: {593, -1, 8 + 2},      // v016 start
 	3760128: {622, 15, 16 + 4 + 1}, // --> end
 	3760129: {623, -1, 8 + 2},      // v017 start
+	5070848: {702, 15, 16 + 4 + 1}, // --> end
+	5070849: {703, -1, 8 + 2},      // v018 start
+	5726208: {742, 15, 16 + 4 + 1}, // --> end
+	5726209: {743, 15, 8 + 2},      // v019 start
 }
 
 var paramBlocks = []BlockMetadata{
@@ -765,6 +770,62 @@ var paramBlocks = []BlockMetadata{
 		LevelInfo: &LevelInfo{
 			Level:              3760129,
 			Cycle:              623,
+			CyclePosition:      0,
+			ExpectedCommitment: false,
+		},
+		VotingPeriodInfo: &VotingPeriodInfo{
+			Position:  0,
+			Remaining: 81912,
+		},
+	}, {
+		// v17 end
+		Protocol:     PtNairobi,
+		NextProtocol: Proxford,
+		LevelInfo: &LevelInfo{
+			Level:              5070848,
+			Cycle:              702,
+			CyclePosition:      8191,
+			ExpectedCommitment: true,
+		},
+		VotingPeriodInfo: &VotingPeriodInfo{
+			Position:  81912,
+			Remaining: 0,
+		},
+	}, {
+		// v18 start
+		Protocol:     Proxford,
+		NextProtocol: Proxford,
+		LevelInfo: &LevelInfo{
+			Level:              5070849,
+			Cycle:              703,
+			CyclePosition:      0,
+			ExpectedCommitment: false,
+		},
+		VotingPeriodInfo: &VotingPeriodInfo{
+			Position:  0,
+			Remaining: 81912,
+		},
+	}, {
+		// v18 end
+		Protocol:     Proxford,
+		NextProtocol: PtParisB,
+		LevelInfo: &LevelInfo{
+			Level:              5726208,
+			Cycle:              742,
+			CyclePosition:      8191,
+			ExpectedCommitment: true,
+		},
+		VotingPeriodInfo: &VotingPeriodInfo{
+			Position:  81912,
+			Remaining: 0,
+		},
+	}, {
+		// v19 start
+		Protocol:     PtParisB,
+		NextProtocol: PtParisB,
+		LevelInfo: &LevelInfo{
+			Level:              5726209,
+			Cycle:              743,
 			CyclePosition:      0,
 			ExpectedCommitment: false,
 		},

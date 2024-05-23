@@ -4,9 +4,9 @@ import (
 	"sort"
 	"strconv"
 
-	"blockwatch.cc/tzgo/contract/ast"
-	"blockwatch.cc/tzgo/micheline"
 	"github.com/pkg/errors"
+	"github.com/trilitech/tzgo/contract/ast"
+	"github.com/trilitech/tzgo/micheline"
 )
 
 func (p *parser) parseEntrypoints() error {

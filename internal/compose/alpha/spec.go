@@ -13,9 +13,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"blockwatch.cc/tzgo/internal/compose"
-	"blockwatch.cc/tzgo/micheline"
-	"blockwatch.cc/tzgo/tezos"
+	"github.com/trilitech/tzgo/internal/compose"
+	"github.com/trilitech/tzgo/micheline"
+	"github.com/trilitech/tzgo/tezos"
 	"gopkg.in/yaml.v3"
 )
 
