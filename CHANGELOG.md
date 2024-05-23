@@ -1,7 +1,8 @@
 # Changelog
 
-## v1.19.0 (unreleased)
+## v1.19.0
 
+* BREAKING CHANGE: The cannonical import part has been changed from `blockwatch.cc` to `github.com/trilitech`
 * Paris protocol support
 * tezos: replaced `PreservedCycles` with `ConsensusRightsDelay` in params
 * tezos: added attestation-style versions of op types
