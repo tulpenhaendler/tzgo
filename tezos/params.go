@@ -32,10 +32,10 @@ var (
 		CostPerByte:                  250,
 		OriginationSize:              257,
 		HardGasLimitPerOperation:     1040000,
-		HardGasLimitPerBlock:         2600000,
+		HardGasLimitPerBlock:         1733333,
 		HardStorageLimitPerOperation: 60000,
 		MaxOperationDataLength:       32768,
-		MaxOperationsTTL:             240,
+		MaxOperationsTTL:             360,
 	}).
 		WithChainId(Ghostnet).
 		WithDeployment(Deployments[Ghostnet].AtProtocol(ProtoV019))
