@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.19.1
+* Update Paris protocol to [ParisB2](https://research-development.nomadic-labs.com/parisB2-announcement.html)
+
 ## v1.19.0
 
 * BREAKING CHANGE: The cannonical import part has been changed from `blockwatch.cc` to `github.com/trilitech`
