@@ -756,7 +756,7 @@ var paramBlocks = []BlockMetadata{
 		LevelInfo: &LevelInfo{
 			Level:              3760128,
 			Cycle:              622,
-			CyclePosition:      8191,
+			CyclePosition:      16383,
 			ExpectedCommitment: true,
 		},
 		VotingPeriodInfo: &VotingPeriodInfo{
@@ -784,7 +784,7 @@ var paramBlocks = []BlockMetadata{
 		LevelInfo: &LevelInfo{
 			Level:              5070848,
 			Cycle:              702,
-			CyclePosition:      8191,
+			CyclePosition:      16383,
 			ExpectedCommitment: true,
 		},
 		VotingPeriodInfo: &VotingPeriodInfo{
@@ -812,7 +812,7 @@ var paramBlocks = []BlockMetadata{
 		LevelInfo: &LevelInfo{
 			Level:              5726208,
 			Cycle:              742,
-			CyclePosition:      8191,
+			CyclePosition:      16383,
 			ExpectedCommitment: true,
 		},
 		VotingPeriodInfo: &VotingPeriodInfo{
