@@ -295,6 +295,11 @@ func (p *Params) IsCycleEnd(height int64) bool {
 }
 
 func (p *Params) IsSnapshotBlock(height int64) bool {
+	// no more snapshots in Paris
+	if p.Version > 18 && p.IsCycleEnd(height) {
+		return true
+	}
+
 	// adjust to target height
 	at := p.AtBlock(height)
 	pos := at.CyclePosition(height) + 1
