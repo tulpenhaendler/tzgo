@@ -4,7 +4,7 @@
 package rpc
 
 import (
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // BalanceUpdate is a variable structure depending on the Kind field

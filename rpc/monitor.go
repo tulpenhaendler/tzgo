@@ -10,7 +10,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 var ErrMonitorClosed = errors.New("monitor closed")

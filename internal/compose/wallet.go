@@ -6,7 +6,7 @@ package compose
 import (
 	"crypto/ed25519"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 	"github.com/tyler-smith/go-bip32"
 )
 

@@ -9,10 +9,10 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/trilitech/tzgo/codec"
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/signer"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/codec"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/signer"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 const ExtraSafetyMargin int64 = 100 // used to adjust gas and storage estimations

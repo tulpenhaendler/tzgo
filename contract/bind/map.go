@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // Map is a map type used to interact with Tezos smart contracts.

@@ -13,10 +13,10 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"github.com/trilitech/tzgo/contract/bind"
-	"github.com/trilitech/tzgo/internal/compose"
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/contract/bind"
+	"github.com/tulpenhaendler/tzgo/internal/compose"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 func ParseScript(ctx compose.Context, task Task) (*micheline.Script, error) {

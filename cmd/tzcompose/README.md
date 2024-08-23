@@ -14,7 +14,7 @@ Developers can use TzCompose for
 ## Using TzCompose
 
 ```sh
-go run github.com/trilitech/tzgo/cmd/tzcompose [cmd] [flags]
+go run github.com/tulpenhaendler/tzgo/cmd/tzcompose [cmd] [flags]
 
 Env
   TZCOMPOSE_BASE_KEY  private key for base account

@@ -10,12 +10,12 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/trilitech/tzgo/contract"
-	"github.com/trilitech/tzgo/contract/bind"
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/tezos"
 	"github.com/pkg/errors"
+	"github.com/tulpenhaendler/tzgo/contract"
+	"github.com/tulpenhaendler/tzgo/contract/bind"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // Fa2Nft is a generated binding to a Tezos smart contract.

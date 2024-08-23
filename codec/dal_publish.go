@@ -8,7 +8,7 @@ import (
 	"encoding/binary"
 	"strconv"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // DalPublishCommitment represents "Dal_publish_commitment" operation

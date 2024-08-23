@@ -5,7 +5,7 @@ package main
 
 import (
 	logpkg "github.com/echa/log"
-	"github.com/trilitech/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/rpc"
 )
 
 var (

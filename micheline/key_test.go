@@ -10,7 +10,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 type keyTest struct {

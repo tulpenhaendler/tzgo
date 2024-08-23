@@ -2,7 +2,7 @@ package bind
 
 import (
 	"github.com/pkg/errors"
-	"github.com/trilitech/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/micheline"
 )
 
 // Or is a type that can be either L or R.

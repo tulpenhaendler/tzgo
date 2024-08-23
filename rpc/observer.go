@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // WIP: interface may change

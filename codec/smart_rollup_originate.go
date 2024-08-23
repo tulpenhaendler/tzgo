@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // SmartRollupOriginate represents "smart_rollup_originate" operation

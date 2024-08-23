@@ -3,8 +3,8 @@ package tezos_test
 import (
 	"testing"
 
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 type (

@@ -6,8 +6,8 @@ package contract
 import (
 	"fmt"
 
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 type NftLedgerSchema byte

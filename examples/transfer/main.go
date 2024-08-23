@@ -12,10 +12,10 @@ import (
 	"strconv"
 
 	"github.com/echa/log"
-	"github.com/trilitech/tzgo/codec"
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/signer"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/codec"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/signer"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 var (

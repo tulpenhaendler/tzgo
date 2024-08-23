@@ -16,8 +16,8 @@ import (
 
 	"github.com/iancoleman/strcase"
 	"github.com/pkg/errors"
-	"github.com/trilitech/tzgo/internal/generate"
-	"github.com/trilitech/tzgo/internal/parse"
+	"github.com/tulpenhaendler/tzgo/internal/generate"
+	"github.com/tulpenhaendler/tzgo/internal/parse"
 	"gopkg.in/yaml.v3"
 )
 

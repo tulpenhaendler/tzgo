@@ -3,10 +3,10 @@ package bind
 import (
 	"context"
 
-	"github.com/trilitech/tzgo/contract"
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/contract"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 type Contract interface {

@@ -7,10 +7,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/trilitech/tzgo/codec"
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/codec"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 type CallArguments interface {

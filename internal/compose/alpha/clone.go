@@ -6,7 +6,7 @@ package alpha
 import (
 	"bytes"
 
-	"github.com/trilitech/tzgo/internal/compose"
+	"github.com/tulpenhaendler/tzgo/internal/compose"
 	"gopkg.in/yaml.v3"
 )
 

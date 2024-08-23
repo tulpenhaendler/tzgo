@@ -11,7 +11,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 type Script struct {

@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // BakingRight holds information about the right to bake a specific Tezos block.

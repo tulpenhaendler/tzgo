@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 var BigmapRefType = Prim{

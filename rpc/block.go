@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // Block holds information about a Tezos block

@@ -4,7 +4,7 @@
 package alpha
 
 import (
-	"github.com/trilitech/tzgo/internal/compose"
+	"github.com/tulpenhaendler/tzgo/internal/compose"
 )
 
 var (

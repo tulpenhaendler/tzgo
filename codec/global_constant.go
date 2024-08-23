@@ -8,8 +8,8 @@ import (
 	"encoding/binary"
 	"strconv"
 
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // RegisterGlobalConstant represents "register_global_constant" operation

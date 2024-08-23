@@ -6,8 +6,8 @@ import (
 	"strconv"
 
 	"github.com/pkg/errors"
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/rpc"
 )
 
 // Bigmap is a handle to a Tezos bigmap.

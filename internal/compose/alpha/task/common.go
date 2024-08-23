@@ -4,9 +4,9 @@
 package task
 
 import (
-	"github.com/trilitech/tzgo/internal/compose"
-	"github.com/trilitech/tzgo/internal/compose/alpha"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/internal/compose"
+	"github.com/tulpenhaendler/tzgo/internal/compose/alpha"
+	"github.com/tulpenhaendler/tzgo/tezos"
 
 	"github.com/pkg/errors"
 )

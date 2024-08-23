@@ -6,8 +6,8 @@ package signer
 import (
 	"context"
 
-	"github.com/trilitech/tzgo/codec"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/codec"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 type Signer interface {

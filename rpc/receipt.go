@@ -8,7 +8,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 var (

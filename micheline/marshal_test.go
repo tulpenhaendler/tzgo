@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 type marshalTest struct {

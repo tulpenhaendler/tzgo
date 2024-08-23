@@ -4,7 +4,7 @@
 package rpc
 
 import (
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // Ensure DAL types implement the TypedOperation interface.

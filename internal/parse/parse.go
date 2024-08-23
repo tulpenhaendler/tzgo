@@ -6,8 +6,8 @@ import (
 	"strconv"
 
 	"github.com/pkg/errors"
-	"github.com/trilitech/tzgo/contract/ast"
-	"github.com/trilitech/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/contract/ast"
+	"github.com/tulpenhaendler/tzgo/micheline"
 )
 
 func Parse(raw []byte, name string) (*ast.Contract, []*ast.Struct, error) {

@@ -8,7 +8,7 @@ import (
 	"text/template"
 
 	"github.com/pkg/errors"
-	"github.com/trilitech/tzgo/contract/ast"
+	"github.com/tulpenhaendler/tzgo/contract/ast"
 )
 
 //go:embed contract.go.tmpl

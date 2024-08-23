@@ -8,7 +8,7 @@ import (
 	"encoding/binary"
 	"strconv"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // SmartRollupAddMessages represents "smart_rollup_add_messages" operation

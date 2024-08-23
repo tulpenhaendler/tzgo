@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/trilitech/tzgo/internal/compose"
+	"github.com/tulpenhaendler/tzgo/internal/compose"
 )
 
 // 1 load yaml file

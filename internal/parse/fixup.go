@@ -1,6 +1,6 @@
 package parse
 
-import "github.com/trilitech/tzgo/contract/ast"
+import "github.com/tulpenhaendler/tzgo/contract/ast"
 
 type FixupConfig map[string]FixupStruct
 

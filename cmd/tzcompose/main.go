@@ -13,11 +13,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/trilitech/tzgo/internal/compose"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/internal/compose"
+	"github.com/tulpenhaendler/tzgo/tezos"
 
-	_ "github.com/trilitech/tzgo/internal/compose/alpha"
-	_ "github.com/trilitech/tzgo/internal/compose/alpha/task"
+	_ "github.com/tulpenhaendler/tzgo/internal/compose/alpha"
+	_ "github.com/tulpenhaendler/tzgo/internal/compose/alpha/task"
 )
 
 var (

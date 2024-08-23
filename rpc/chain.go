@@ -6,7 +6,7 @@ package rpc
 import (
 	"context"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // GetChainId returns the chain id (i.e. network id).

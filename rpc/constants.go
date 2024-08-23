@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // Constants represents only a limited subset of Tezos chain configuration params

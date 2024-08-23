@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 var (

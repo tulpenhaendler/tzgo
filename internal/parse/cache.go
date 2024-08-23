@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"hash/fnv"
 
-	"github.com/trilitech/tzgo/contract/ast"
+	"github.com/tulpenhaendler/tzgo/contract/ast"
 )
 
 type Cache struct {

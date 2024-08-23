@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 func asTime(s string) time.Time {

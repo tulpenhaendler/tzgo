@@ -8,7 +8,7 @@ import (
 	"encoding/binary"
 	"strconv"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // DoubleBakingEvidence represents "double_baking_evidence" operation

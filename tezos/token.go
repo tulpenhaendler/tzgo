@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/trilitech/tzgo/base58"
+	"github.com/tulpenhaendler/tzgo/base58"
 )
 
 var (

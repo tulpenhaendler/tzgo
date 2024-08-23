@@ -1,7 +1,7 @@
 package ast
 
 import (
-	"github.com/trilitech/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/micheline"
 )
 
 type Entrypoint struct {

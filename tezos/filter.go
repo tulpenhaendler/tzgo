@@ -4,7 +4,7 @@
 package tezos
 
 import (
-	"github.com/trilitech/tzgo/hash"
+	"github.com/tulpenhaendler/tzgo/hash"
 )
 
 type AddressFilter struct {

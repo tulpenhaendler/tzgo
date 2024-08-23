@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 var (

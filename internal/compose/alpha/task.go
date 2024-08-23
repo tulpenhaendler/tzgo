@@ -6,9 +6,9 @@ package alpha
 import (
 	"fmt"
 
-	"github.com/trilitech/tzgo/codec"
-	"github.com/trilitech/tzgo/internal/compose"
-	"github.com/trilitech/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/codec"
+	"github.com/tulpenhaendler/tzgo/internal/compose"
+	"github.com/tulpenhaendler/tzgo/rpc"
 )
 
 type TaskBuilder interface {

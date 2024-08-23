@@ -47,18 +47,18 @@ We attempt to upgrade TzGo whenever new protocols are proposed and will add new 
 ### Usage
 
 ```sh
-go get -u github.com/trilitech/tzgo
+go get -u github.com/tulpenhaendler/tzgo
 ```
 
 Then import, using
 
 ```go
 import (
-	"github.com/trilitech/tzgo/codec"
-	"github.com/trilitech/tzgo/tezos"
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/wallet"
+	"github.com/tulpenhaendler/tzgo/codec"
+	"github.com/tulpenhaendler/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/wallet"
 )
 ```
 
@@ -101,7 +101,7 @@ Below are a few examples showing how to use TzGo to easily access Tezos data in 
 To parse/decode an address and output its components you can do the following:
 
 ```go
-import "github.com/trilitech/tzgo/tezos"
+import "github.com/tulpenhaendler/tzgo/tezos"
 
 // parse and panic if invalid
 addr := tezos.MustParseAddress("tz3RDC3Jdn4j15J7bBHZd29EUee9gVB1CxD9")
@@ -125,7 +125,7 @@ See [examples/addr.go](https://github.com/blockwatch-cc/tzgo/blob/master/example
 A Tezos node can notify applications when new blocks are attached to the chain. The Tezos RPC calls this monitor and technically it's a long-poll implementation. Here's how to use this feature in TzGo:
 
 ```go
-import "github.com/trilitech/tzgo/rpc"
+import "github.com/tulpenhaendler/tzgo/rpc"
 
 // init SDK client
 c, _ := rpc.NewClient("https://rpc.tzstats.com", nil)
@@ -159,9 +159,9 @@ for {
 
 ```go
 import (
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // we use the Baker Registry on mainnet as example
@@ -184,9 +184,9 @@ fmt.Println(string(buf))
 
 ```go
 import (
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // init RPC client
@@ -271,9 +271,9 @@ err := val.Unmarshal(&transfer)
 
 ```go
 import (
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // we use the hic et nunc NFT market on mainnet as example
@@ -329,7 +329,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/trilitech/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/rpc"
 )
 
 

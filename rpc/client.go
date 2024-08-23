@@ -16,8 +16,8 @@ import (
 	"strings"
 
 	"github.com/echa/log"
-	"github.com/trilitech/tzgo/signer"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/signer"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 const (

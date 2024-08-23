@@ -8,7 +8,7 @@ import (
 	"encoding/binary"
 	"strconv"
 
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // FailingNoop represents "failing_noop" operations. Used for signing arbitrary messages

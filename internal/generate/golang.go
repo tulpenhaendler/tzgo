@@ -6,7 +6,7 @@ import (
 	"text/template"
 
 	"github.com/iancoleman/strcase"
-	"github.com/trilitech/tzgo/contract/ast"
+	"github.com/tulpenhaendler/tzgo/contract/ast"
 )
 
 var funcMap = template.FuncMap{

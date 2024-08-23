@@ -6,11 +6,11 @@ package task
 import (
 	"fmt"
 
-	"github.com/trilitech/tzgo/codec"
-	"github.com/trilitech/tzgo/internal/compose"
-	"github.com/trilitech/tzgo/internal/compose/alpha"
-	"github.com/trilitech/tzgo/rpc"
-	"github.com/trilitech/tzgo/signer"
+	"github.com/tulpenhaendler/tzgo/codec"
+	"github.com/tulpenhaendler/tzgo/internal/compose"
+	"github.com/tulpenhaendler/tzgo/internal/compose/alpha"
+	"github.com/tulpenhaendler/tzgo/rpc"
+	"github.com/tulpenhaendler/tzgo/signer"
 
 	"github.com/pkg/errors"
 )

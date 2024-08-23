@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/trilitech/tzgo/micheline"
-	"github.com/trilitech/tzgo/tezos"
+	"github.com/tulpenhaendler/tzgo/micheline"
+	"github.com/tulpenhaendler/tzgo/tezos"
 )
 
 // UnmarshalPrimPath unmarshals a nested prim contained in root, obtained using the given path,
