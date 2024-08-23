@@ -196,17 +196,18 @@ func DetectBigmaps(typ, storage Prim) map[string]int64 {
 			return PrimSkip
 
 		case T_LIST, T_SET:
-			for i, p := range val.Args {
-				for n, v := range DetectBigmaps(typ.Args[0], p) {
-					n = n + "_" + strconv.Itoa(i)
-					named[uniqueName(n)] = v
+			if p.Args[0].OpCode == T_BIG_MAP {
+				for i, v := range val.Args {
+					if v.Type == PrimInt {
+						named[uniqueName(p.GetVarAnnoAny()+"_"+strconv.Itoa(i))] = v.Int.Int64()
+					}
 				}
 			}
 			return PrimSkip
 
 		case T_OR:
 			branch := p.Args[0]
-			if val.OpCode == D_RIGHT {
+			if len(val.Args) > 0 && val.Args[0].OpCode == D_RIGHT {
 				branch = p.Args[1]
 			}
 			if len(val.Args) > 0 {
@@ -227,9 +228,9 @@ func DetectBigmaps(typ, storage Prim) map[string]int64 {
 			if p.Args[1].OpCode != T_BIG_MAP {
 				return PrimSkip
 			}
-			for i, v := range val.Args {
+			for _, v := range val.Args {
 				if v.OpCode != D_ELT || v.Args[1].Type != PrimInt {
-					break
+					continue
 				}
 				var name string
 				switch v.Args[0].Type {
@@ -246,7 +247,7 @@ func DetectBigmaps(typ, storage Prim) map[string]int64 {
 					}
 				}
 				if name == "" {
-					name = p.GetVarAnnoAny() + "_" + strconv.Itoa(i)
+					name = p.GetVarAnnoAny()
 				}
 				named[uniqueName(name)] = v.Args[1].Int.Int64()
 			}
