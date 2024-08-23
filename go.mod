@@ -1,4 +1,4 @@
-module github.com/trilitech/tzgo
+module github.com/tulpenhaendler/tzgo
 
 go 1.18
 
